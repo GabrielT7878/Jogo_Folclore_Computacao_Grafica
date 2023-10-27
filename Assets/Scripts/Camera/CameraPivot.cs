@@ -8,6 +8,6 @@ public class CameraPivot : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, player.position, 0.1f);
+        transform.position = Vector3.Lerp(transform.position, player.position, 5f);
     }
 }
