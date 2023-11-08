@@ -31,6 +31,12 @@ public class ControlPlayer : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         if (!roll)
         {
+            if (Input.GetButtonDown("Fire3") && !roll)
+            {
+                anim.SetTrigger("Rolar");
+                roll = true;
+            }
+            
             Vector3 direction = new Vector3(0, 0, horizontal);
 
             transform.Translate(direction * walkSpeed * Time.deltaTime);
@@ -70,35 +76,53 @@ public class ControlPlayer : MonoBehaviour
 
             if (isGrounded && Input.GetButtonDown("Jump"))
             {
-                rb.AddForce(transform.up * forceJump, ForceMode.Impulse);
+                if (Input.GetButton("Fire2") && horizontal > 0.01f)
+                {
+                    rb.AddForce(new Vector3(0, 1, 1) * forceJump, ForceMode.Impulse);
+                    anim.SetBool("jump_run", true);
+                }
+                else if (Input.GetButton("Fire2") && horizontal < -0.01f)
+                {
+                    rb.AddForce(new Vector3(0, 1, -1) * forceJump, ForceMode.Impulse);
+                    anim.SetBool("jump_run", true);
+                }
+                else if (horizontal > 0.01f)
+                {
+                    rb.AddForce(new Vector3(0, 1, 0.5f) * forceJump, ForceMode.Impulse);
+
+                }
+                else if (horizontal < -0.01f)
+                {
+                    rb.AddForce(new Vector3(0, 1, -0.5f) * forceJump, ForceMode.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(transform.up * forceJump, ForceMode.Impulse);
+                }
                 anim.SetTrigger("jump");
             }
 
-            if (Input.GetButton("Fire2") && isGrounded && horizontal != 0){
-                walkSpeed = runSpeed;
+            if (Input.GetButton("Fire2") && isGrounded && horizontal != 0)
+            {
+                if (walkSpeed < runSpeed)
+                {
+                    walkSpeed += 0.1f;
+                }
                 transform.Translate(direction * walkSpeed * Time.deltaTime);
                 anim.SetBool("running", true);
-            }else{
+            }
+            else
+            {
                 anim.SetBool("running", false);
                 walkSpeed = 3;
             }
 
 
         }
-
-        if (Input.GetButtonDown("Fire3") && !roll)
-        {
-            anim.SetTrigger("Rolar");
-            roll = true;
-        }
         if (roll)
         {
-            
-            transform.Translate(new Vector3(0, 0, side) * walkSpeed*0.5f * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, side) * walkSpeed * 0.5f * Time.deltaTime);
         }
-
-        
-
 
     }
 
@@ -107,6 +131,14 @@ public class ControlPlayer : MonoBehaviour
         if (i == 1)
         {
             roll = false;
+        }
+    }
+
+    public void jumpRun(int i)
+    {
+        if (i == 1)
+        {
+            anim.SetBool("jump_run", false);
         }
     }
 

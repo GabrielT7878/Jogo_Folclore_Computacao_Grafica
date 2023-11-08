@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "Jogo_Folclore_Computacao_Grafica-main.sln"
+    "dotnet.defaultSolution": "Jogo_Folclore_Computacao_Grafica.sln"
 }
