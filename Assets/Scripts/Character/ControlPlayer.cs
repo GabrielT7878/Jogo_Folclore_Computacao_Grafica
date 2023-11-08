@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class ControlPlayer : MonoBehaviour
     public bool roll = false;
     private int side = 1;
     public float runSpeed;
+    public CapsuleCollider col;
+    private float horizontal;
 
 
     public Animator anim;
@@ -27,7 +30,7 @@ public class ControlPlayer : MonoBehaviour
     void Update()
     {
 
-        float horizontal = Input.GetAxis("Horizontal");
+        horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         if (!roll)
         {
@@ -35,6 +38,8 @@ public class ControlPlayer : MonoBehaviour
             {
                 anim.SetTrigger("Rolar");
                 roll = true;
+                col.height = 1.42f;
+                col.center = new Vector3(0, 0.6f, 0);
             }
             
             Vector3 direction = new Vector3(0, 0, horizontal);
@@ -130,7 +135,10 @@ public class ControlPlayer : MonoBehaviour
     {
         if (i == 1)
         {
+
             roll = false;
+            col.height = 2.45f;
+            col.center = new Vector3(0, 1.19f, 0);
         }
     }
 
@@ -139,6 +147,34 @@ public class ControlPlayer : MonoBehaviour
         if (i == 1)
         {
             anim.SetBool("jump_run", false);
+        }
+    }
+
+    /// <summary>
+    /// OnCollisionEnter is called when this collider/rigidbody has begun
+    /// touching another rigidbody/collider.
+    /// </summary>
+    /// <param name="other">The Collision data associated with this collision.</param>
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Jumper")
+        {
+            anim.SetTrigger("jump");
+            rb.AddForce(transform.up * forceJump * 2.5f, ForceMode.Impulse);
+        }
+
+        if(other.gameObject.tag == "Damage")
+        {
+            if(horizontal > 0.01f)
+            {
+                rb.AddForce(new Vector3(0, 0.5f, -0.5f) * forceJump * 0.8f, ForceMode.Impulse);
+            }
+            else if(horizontal < -0.01f)
+            {
+                rb.AddForce(new Vector3(0, 0.5f, 0.5f) * forceJump * 0.8f, ForceMode.Impulse);
+            }else{
+                 rb.AddForce(new Vector3(0, 1f, 0.5f) * forceJump, ForceMode.Impulse);
+            }
         }
     }
 

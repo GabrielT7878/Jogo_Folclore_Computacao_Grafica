@@ -1,0 +1,815 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.12f1 (4fe6e059c7ef) revision 5236448'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'pt' Physical Memory: 14267 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Windows_Programs\UnityHub\2022.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Projeto_Jogo/Jogo_Folclore_Computacao_Grafica
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+64916
+Successfully changed project path to: D:/Projeto_Jogo/Jogo_Folclore_Computacao_Grafica
+D:/Projeto_Jogo/Jogo_Folclore_Computacao_Grafica
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15228] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 1282013901 [EditorId] 1282013901 [Version] 1048832 [Id] WindowsEditor(7,Windows_11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [15228] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 1282013901 [EditorId] 1282013901 [Version] 1048832 [Id] WindowsEditor(7,Windows_11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 5.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.12f1 (4fe6e059c7ef)
+[Subsystems] Discovering subsystems at path D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projeto_Jogo/Jogo_Folclore_Computacao_Grafica/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15dd)
+    Vendor:   ATI
+    VRAM:     7133 MB
+    Driver:   30.0.13014.8
+Initialize mono
+Mono path[0] = 'D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Windows_Programs/UnityHub/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006447 seconds.
+- Loaded All Assemblies, in  0.466 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.387 seconds
+Domain Reload Profiling: 853ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (197ms)
+		LoadAssemblies (129ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (178ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (387ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (307ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (213ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.747 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.380 seconds
+Domain Reload Profiling: 2128ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (449ms)
+		LoadAssemblies (314ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (231ms)
+			TypeCache.Refresh (206ms)
+				TypeCache.ScanAssembly (189ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1381ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1164ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (1041ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.3 KB). Loaded Objects now: 3571.
+Memory consumption went from 130.8 MB to 130.8 MB.
+Total: 15.165900 ms (FindLiveObjects: 0.321300 ms CreateObjectMapping: 0.113800 ms MarkObjects: 14.559700 ms  DeleteObjects: 0.169200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 161603.668640 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/MidNightFreebieDemo.unity
+  artifactKey: Guid(80b2b3058ff1d3944b4d96d6824deb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/MidNightFreebieDemo.unity using Guid(80b2b3058ff1d3944b4d96d6824deb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f7a0e258564c21b358f91bc2160cb5') in 0.002516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002712 seconds.
+  path: Assets/Textures/personagem/torço/Materials/outfit-f-casual-01-v2-top-R.mat
+  artifactKey: Guid(fef7ae8bb1e08fd43ae3770a014c1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/torço/Materials/outfit-f-casual-01-v2-top-R.mat using Guid(fef7ae8bb1e08fd43ae3770a014c1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e530345a47af54d3b7bbe26f5ba0627') in 0.155878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.061046 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/SunlessFreebieDemo.unity
+  artifactKey: Guid(73547a7486fb43f45b68fed50e680e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/SunlessFreebieDemo.unity using Guid(73547a7486fb43f45b68fed50e680e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e50a3defd5c67b8771d829bde84c43') in 0.000519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.030235 seconds.
+  path: Assets/Textures/personagem/olho/baseColor.jpg
+  artifactKey: Guid(15cf4037072d168488445406d3ffb77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/olho/baseColor.jpg using Guid(15cf4037072d168488445406d3ffb77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b9e573c538ced6bd52b6314de40dfc') in 0.023001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.166724 seconds.
+  path: Assets/Textures/personagem/torço/outfit-f-casual-01-v2-top-N.jpg
+  artifactKey: Guid(aac21bb5f4d225f4cb00fe5f7de6ce93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/torço/outfit-f-casual-01-v2-top-N.jpg using Guid(aac21bb5f4d225f4cb00fe5f7de6ce93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24f363cc83894ae755ae80c1595e0b0') in 0.072367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003723 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/CasualDay.unity
+  artifactKey: Guid(745822b12dae28c44b79ddd800e253e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/CasualDay.unity using Guid(745822b12dae28c44b79ddd800e253e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e94cbaa4e057454aaadeca3f3037e0') in 0.000645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024653 seconds.
+  path: Assets/SkySeries Freebie/Hdri setup.txt
+  artifactKey: Guid(add36ebe5ee5af347a876cdf41d00709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/Hdri setup.txt using Guid(add36ebe5ee5af347a876cdf41d00709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4677fd15d180339d4816fb0cd27f1dc2') in 0.001273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.020440 seconds.
+  path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+  artifactKey: Guid(26aedd478fb8b5744bab230df552c157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db using Guid(26aedd478fb8b5744bab230df552c157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa6ba824205d537d2a9c7c20460d553') in 0.000946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002518 seconds.
+  path: Assets/Textures/personagem/cal+ºado/Materials/outfit-f-casual-01-v2-footwear-R.mat
+  artifactKey: Guid(433d091f6e3969342a792676c25ba7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cal+ºado/Materials/outfit-f-casual-01-v2-footwear-R.mat using Guid(433d091f6e3969342a792676c25ba7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bc818d00447073448e61d0ac9b1833') in 0.015598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003260 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/SceneObjects/Full.mat
+  artifactKey: Guid(1b27a20a436b4c64b882a6f739bf91de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/SceneObjects/Full.mat using Guid(1b27a20a436b4c64b882a6f739bf91de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ce505d7a4d054da1ab55242d3ab845') in 0.013246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.018569 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/Demo/TerrainScene.unity
+  artifactKey: Guid(a1682599096835f43aeaba8eb03cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/Demo/TerrainScene.unity using Guid(a1682599096835f43aeaba8eb03cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70dde5c3796d89aa13b8fc13b6ef28f') in 0.000480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.035577 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(8bad034fc97ec394ea6748e44619e587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(8bad034fc97ec394ea6748e44619e587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd972edb019281062e98af5580d4b03bc') in 0.000543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003259 seconds.
+  path: Assets/Textures/personagem/torço/Materials/outfit-f-casual-01-v2-top-N.mat
+  artifactKey: Guid(287e8a7042c34464bbc95dbe9b9f38b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/torço/Materials/outfit-f-casual-01-v2-top-N.mat using Guid(287e8a7042c34464bbc95dbe9b9f38b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e3cc365e984966e281d85c0a67b37e') in 0.013861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.037355 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/FallenTree_1_1.prefab
+  artifactKey: Guid(c33d23e7dff87c94bbbf8303e2318397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/FallenTree_1_1.prefab using Guid(c33d23e7dff87c94bbbf8303e2318397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a3aad02b57a8d089c7f0a8286d161d') in 0.032515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.003367 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/GrassColor.mat
+  artifactKey: Guid(0736e729a60d81443bac1bf37299564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/GrassColor.mat using Guid(0736e729a60d81443bac1bf37299564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8299efd4600e5101c6bad6966e4288e1') in 0.018583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.060038 seconds.
+  path: Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-R.jpg
+  artifactKey: Guid(2b0a0c3b497a4144ca3b50e0a4cde3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-R.jpg using Guid(2b0a0c3b497a4144ca3b50e0a4cde3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd435dee100e37287c56de8bb5e9758b8') in 0.018383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002755 seconds.
+  path: Assets/Textures/personagem/cal+ºado
+  artifactKey: Guid(af643c017b8d55c40954b34fbf2249d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cal+ºado using Guid(af643c017b8d55c40954b34fbf2249d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d409965798d6adb5c7f61c2b5e183a3') in 0.000613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004053 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Grass_1.mat
+  artifactKey: Guid(7e9e3cb396458b84aada10e45759c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Grass_1.mat using Guid(7e9e3cb396458b84aada10e45759c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6170b4721ab49d58a047b7d8655b9a') in 0.022757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003483 seconds.
+  path: Assets/Textures/personagem/tor+ºo/outfit-f-casual-01-v2-top-D.jpg
+  artifactKey: Guid(a15e3850d78d9b24ca89f86c464f2117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/tor+ºo/outfit-f-casual-01-v2-top-D.jpg using Guid(a15e3850d78d9b24ca89f86c464f2117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6326267e67c3f94772d720e400f2993') in 0.025795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.024805 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/HighFantasy.unity
+  artifactKey: Guid(c5c5155be27cc3a4fbea5063433ca717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/HighFantasy.unity using Guid(c5c5155be27cc3a4fbea5063433ca717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0f73abd50abd94c108d993746fdc11') in 0.000632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003672 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/PlanetaryFreebie.unity
+  artifactKey: Guid(b803de4d65984fd4b83f3b24d963118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/PlanetaryFreebie.unity using Guid(b803de4d65984fd4b83f3b24d963118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c2ca815cf0251a8de1c2ddbdcc6061') in 0.001262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004478 seconds.
+  path: Assets/Textures/personagem/calçado/Materials/outfit-f-casual-01-v2-footwear-R.mat
+  artifactKey: Guid(76ec0654136bfe04aa3b4e5dc53586ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/Materials/outfit-f-casual-01-v2-footwear-R.mat using Guid(76ec0654136bfe04aa3b4e5dc53586ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db02cd53764931ae4e5dc1d1273cebbc') in 0.016651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.023093 seconds.
+  path: Assets/Textures/personagem/cabelo/Materials/baseColor.003.mat
+  artifactKey: Guid(d9615e9aa68f39c4a9cad3058849e5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cabelo/Materials/baseColor.003.mat using Guid(d9615e9aa68f39c4a9cad3058849e5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9518f221bde740e79caae1a93969e04') in 0.019806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004134 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Grass_1_2.prefab
+  artifactKey: Guid(729e667a67b1fbd40adbda716ae59a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Grass_1_2.prefab using Guid(729e667a67b1fbd40adbda716ae59a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27441a72dfcc491efa41229c614312a3') in 0.019817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.002869 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/Effects/Skybox.mat
+  artifactKey: Guid(7c0955a843cac66449fb7754cda3fcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/Effects/Skybox.mat using Guid(7c0955a843cac66449fb7754cda3fcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba30d61b79d0652b50e7740b6481c72') in 0.020369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003261 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/TreeLeaf_1.mat
+  artifactKey: Guid(22ae8ca533ae0ff45a92966006a65514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/TreeLeaf_1.mat using Guid(22ae8ca533ae0ff45a92966006a65514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34d875e4fe5ba32fda11b2a44895cb4') in 0.014561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.015201 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs
+  artifactKey: Guid(54c2d62876ea875408d05fb5ca09fbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs using Guid(54c2d62876ea875408d05fb5ca09fbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5326b8d53417cb9fb3f7d7109ceefa5f') in 0.000609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002994 seconds.
+  path: Assets/Animations/Boss/BossController.controller
+  artifactKey: Guid(0a6503e39cef81c469d0639a52170b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Boss/BossController.controller using Guid(0a6503e39cef81c469d0639a52170b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c9c7a0442390c2d42912ea48d6ee8c') in 0.004210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.002421 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/SceneObjects/6_10.mat
+  artifactKey: Guid(abcc3c67b7d0a794f8bb91be4e85abdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/SceneObjects/6_10.mat using Guid(abcc3c67b7d0a794f8bb91be4e85abdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79597d32403be8d32a488527c2431c3') in 0.017148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.012335 seconds.
+  path: Assets/New Animation.anim
+  artifactKey: Guid(50a1dcfeb4bb55249909e4b98a26d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Animation.anim using Guid(50a1dcfeb4bb55249909e4b98a26d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79d4de8a2cf8de6783711cd4e59d8a1') in 0.001466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.059822 seconds.
+  path: Assets/Textures/personagem/tor+ºo/Materials/outfit-f-casual-01-v2-top-D.mat
+  artifactKey: Guid(31fdefd937a83c846bc1f17e3b1bb791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/tor+ºo/Materials/outfit-f-casual-01-v2-top-D.mat using Guid(31fdefd937a83c846bc1f17e3b1bb791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fbf4f1e158421ae4630f92cb5e1f2d') in 0.017237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.019258 seconds.
+  path: Assets/Textures/personagem/cal+ºado/outfit-f-casual-01-v2-footwear-D.jpg
+  artifactKey: Guid(ab4c6a0187d5d704aba8d4d6775d4726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cal+ºado/outfit-f-casual-01-v2-footwear-D.jpg using Guid(ab4c6a0187d5d704aba8d4d6775d4726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd66a8571948735d3a20aef2581776775') in 0.016462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.009972 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Tree_1_1.prefab
+  artifactKey: Guid(465cbb465c9880c45887d824bd1f720b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Tree_1_1.prefab using Guid(465cbb465c9880c45887d824bd1f720b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54fba3643e468b32fd9b2fb137528df9') in 0.024570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 129
+========================================================================
+Received Import Request.
+  Time since last request: 0.182870 seconds.
+  path: Assets/Textures/personagem/calçado
+  artifactKey: Guid(723cecf077d78b94d8c9d223fbcc60e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado using Guid(723cecf077d78b94d8c9d223fbcc60e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfac7f7eb98db2ec71598b01cf136f72') in 0.000592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003329 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/SkyhighFreebieDemo.unity
+  artifactKey: Guid(475ff5ddb2faf0f41b3cc2073532de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/SkyhighFreebieDemo.unity using Guid(475ff5ddb2faf0f41b3cc2073532de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1fd437bdc1b667c3ff52d3cc970216') in 0.000593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.190534 seconds.
+  path: Assets/Textures/personagem/calçado/Materials/outfit-f-casual-01-v2-footwear-N.mat
+  artifactKey: Guid(6a6ca0f19736c704f8d2dff8ca6bce3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/Materials/outfit-f-casual-01-v2-footwear-N.mat using Guid(6a6ca0f19736c704f8d2dff8ca6bce3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e43831115d8a5ec43658da0e74cf459') in 0.016428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002214 seconds.
+  path: Assets/Textures/personagem/torço/Materials
+  artifactKey: Guid(6f12f23364f58384580891f26c6dd978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/torço/Materials using Guid(6f12f23364f58384580891f26c6dd978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0894374359ad653768a2e2d4b8eb11b8') in 0.000586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.248112 seconds.
+  path: Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-N.jpg
+  artifactKey: Guid(b73197732242b4d42a2eeec826e6e66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-N.jpg using Guid(b73197732242b4d42a2eeec826e6e66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c15b9cc7d9e3423cb4649bd039ec0b') in 0.016642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.526944 seconds.
+  path: Assets/Textures/personagem/cal+ºado/outfit-f-casual-01-v2-footwear-N.jpg
+  artifactKey: Guid(f08f99e8d08af7346a149cca2908b44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cal+ºado/outfit-f-casual-01-v2-footwear-N.jpg using Guid(f08f99e8d08af7346a149cca2908b44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef04b53db3fbcf3867f042e83adf93e3') in 0.021803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-N.mat
+  artifactKey: Guid(763050a9842317143a0b68a2a8368058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-N.mat using Guid(763050a9842317143a0b68a2a8368058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5bc30f610b641e30b71d012d4312a14') in 0.032457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.030256 seconds.
+  path: Assets/Textures/personagem/torço/outfit-f-casual-01-v2-top-R.jpg
+  artifactKey: Guid(3e3fceb9f7cc47140af8efa2ad4ccb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/torço/outfit-f-casual-01-v2-top-R.jpg using Guid(3e3fceb9f7cc47140af8efa2ad4ccb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049c2b702cfb86d15824fb3607b420e1') in 0.015740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.015368 seconds.
+  path: Assets/Textures/personagem/perna/outfit-f-casual-01-v2-bottom-N.jpg
+  artifactKey: Guid(cc9738c590646b1449f7f044bd3b40e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/perna/outfit-f-casual-01-v2-bottom-N.jpg using Guid(cc9738c590646b1449f7f044bd3b40e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1f11e58182126bcf61e97b3026731f') in 0.016346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002975 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/Effects/NaturePostProcessSetup.asset
+  artifactKey: Guid(0ba42f0245cfea1468c5dd9c60521d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/Effects/NaturePostProcessSetup.asset using Guid(0ba42f0245cfea1468c5dd9c60521d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aeb7b27bffd852045e84cb850704a6e') in 0.003977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004178 seconds.
+  path: Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-R.mat
+  artifactKey: Guid(83c538507db03204b835ad8aba37c827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-R.mat using Guid(83c538507db03204b835ad8aba37c827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50294176ae76c9812a32eb906bea19e4') in 0.019208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002270 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/SceneObjects
+  artifactKey: Guid(4f34c5940141eff4e82f4c8bfdf6e203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/SceneObjects using Guid(4f34c5940141eff4e82f4c8bfdf6e203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5933b9f354c59a4f831a033f5e355ab') in 0.000585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.212577 seconds.
+  path: Assets/Textures/personagem/cabelo/hair-19-N.jpg
+  artifactKey: Guid(4a0767c284428f14dace0f85b38cbf5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cabelo/hair-19-N.jpg using Guid(4a0767c284428f14dace0f85b38cbf5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0000cdff5dcd86566e2b0e170f57580') in 0.017440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.051927 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/UnderTheSea.unity
+  artifactKey: Guid(36dce1c4ecf83f74392c8361f42e87e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/UnderTheSea.unity using Guid(36dce1c4ecf83f74392c8361f42e87e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c69f8040fce2b5baca99929edb55e0a') in 0.000635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.051869 seconds.
+  path: Assets/Textures/personagem/mão/baseColor.002.jpg
+  artifactKey: Guid(466931cf3cf835b4b8d9ef80225aced0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/mão/baseColor.002.jpg using Guid(466931cf3cf835b4b8d9ef80225aced0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013eb708a4ec54e9a44e72c5716892de') in 0.016290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002807 seconds.
+  path: Assets/Textures/personagem/cabelo
+  artifactKey: Guid(de16b9cf4ff74134f8bae0ba3c6a34a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cabelo using Guid(de16b9cf4ff74134f8bae0ba3c6a34a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd162a07276adb1ffc6c009a8bf09e7a3') in 0.000640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.228544 seconds.
+  path: Assets/Textures/personagem/cal+ºado/Materials/outfit-f-casual-01-v2-footwear-D.mat
+  artifactKey: Guid(89608ced56b1dd5439cc57644da53b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/cal+ºado/Materials/outfit-f-casual-01-v2-footwear-D.mat using Guid(89608ced56b1dd5439cc57644da53b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2b179729ee89ebb32a5f349a1cf3f2') in 0.014568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.031840 seconds.
+  path: Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-D.jpg
+  artifactKey: Guid(a59ccb9b67bd6ab4e89b9f408f847a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/outfit-f-casual-01-v2-footwear-D.jpg using Guid(a59ccb9b67bd6ab4e89b9f408f847a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa069692e40cc569d1cc3b4a9ab2e412') in 0.014722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003036 seconds.
+  path: Assets/Textures/personagem/m+úo/Materials/baseColor.002.mat
+  artifactKey: Guid(f35d0dce2152d3e49be98ff2d406fcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/m+úo/Materials/baseColor.002.mat using Guid(f35d0dce2152d3e49be98ff2d406fcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9777a750ce67a0c22d9db908e5359198') in 0.013433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.028350 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c503990cf52b3d5acbc7b496fc8c057') in 0.000555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.015175 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Models/Vegetation.fbx
+  artifactKey: Guid(2072bd79c1ae41441b0d087f04e9ec49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Models/Vegetation.fbx using Guid(2072bd79c1ae41441b0d087f04e9ec49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f11b73613aa7bfa8265a324a987eca') in 0.218909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 109
+========================================================================
+Received Import Request.
+  Time since last request: 0.001486 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures/GrassColor.png
+  artifactKey: Guid(59b577b39270af04abdc731059ae1a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures/GrassColor.png using Guid(59b577b39270af04abdc731059ae1a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315f1d7519d611bf0164a14efc860c5c') in 0.013210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004022 seconds.
+  path: Assets/Textures/personagem/calçado/Materials
+  artifactKey: Guid(2ff4fd723f5ef8b4b929a9f941b1f0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/calçado/Materials using Guid(2ff4fd723f5ef8b4b929a9f941b1f0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de82802cf3f2978e99fbacf1366ec64d') in 0.000614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004810 seconds.
+  path: Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-D.mat
+  artifactKey: Guid(39f79a460f7183f4695378a6433e65c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/perna/Materials/outfit-f-casual-01-v2-bottom-D.mat using Guid(39f79a460f7183f4695378a6433e65c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b208dec0dc14215fca3366f65c8b1508') in 0.016306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004041 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures/LowPolyNormal.png
+  artifactKey: Guid(82c1b4c112dc0e041bd7f131c1ab9a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures/LowPolyNormal.png using Guid(82c1b4c112dc0e041bd7f131c1ab9a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f41ae6963b6adfb3266d0c4090e18f3e') in 0.016601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002714 seconds.
+  path: Assets/SkySeries Freebie
+  artifactKey: Guid(79d2e88d066365241854159b3313edc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie using Guid(79d2e88d066365241854159b3313edc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd0b86dd76b0d2ab196fc265e9347a7') in 0.000628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.011949 seconds.
+  path: Assets/Scripts/Character/ControlPlayer.cs
+  artifactKey: Guid(2ced7400f84b9ab44a5c3eebbda519b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Character/ControlPlayer.cs using Guid(2ced7400f84b9ab44a5c3eebbda519b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952d131cdcd4e64263e948374127f813') in 0.000497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001880 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures
+  artifactKey: Guid(f320330b1bf0fa84eafbfa88ea66e083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Textures using Guid(f320330b1bf0fa84eafbfa88ea66e083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8c0bc26545513256dc6cddf212e876') in 0.000478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.013863 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/LowPolyNormal.mat
+  artifactKey: Guid(f5322dce8577f844ca2c2fa8c409c691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/LowPolyNormal.mat using Guid(f5322dce8577f844ca2c2fa8c409c691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3a9b01e431b0338dbe4c11e51a8bba') in 0.015792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.041654 seconds.
+  path: Assets/Textures/personagem/Face/baseColor.001.jpg
+  artifactKey: Guid(a5875eca6e62c8c4185afd7bd5e2d3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/Face/baseColor.001.jpg using Guid(a5875eca6e62c8c4185afd7bd5e2d3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4199024880ab824987f0f4a51b9513') in 0.014733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005212 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Models
+  artifactKey: Guid(404b72b585f845b4884931187e240179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Models using Guid(404b72b585f845b4884931187e240179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81683d5a0acc962bdb6406419905887f') in 0.000600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.142421 seconds.
+  path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+  artifactKey: Guid(38275f75d35e55541b3b23690f7bdef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity.VisualScripting.Generated/VisualScripting.Flow using Guid(38275f75d35e55541b3b23690f7bdef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef78f806e37297026e88c2db3a1f991a') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003414 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/DayInTheClouds.unity
+  artifactKey: Guid(2634e102100bcf64ca81587c175efa45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/DayInTheClouds.unity using Guid(2634e102100bcf64ca81587c175efa45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c17fa15c1e86c09d638c0408120a6c0') in 0.000545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.068824 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Bush_1.mat
+  artifactKey: Guid(41543f25990715d47b8829388b91cd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Bush_1.mat using Guid(41543f25990715d47b8829388b91cd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced311e6c57d7d7bf6c491d249833827') in 0.014061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004913 seconds.
+  path: Assets/Textures/personagem/olho/Materials/baseColor.mat
+  artifactKey: Guid(99c93b0b3d0a18e46b0d10648f1f2220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/olho/Materials/baseColor.mat using Guid(99c93b0b3d0a18e46b0d10648f1f2220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cdefb8c5495568421910e28710c2a6') in 0.014127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.200294 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Trunk_1.mat
+  artifactKey: Guid(94bf847a9b88c60428243d160955ba6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Trunk_1.mat using Guid(94bf847a9b88c60428243d160955ba6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7915828e9d6f1ee3dfa9300ee81d0c2c') in 0.014178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.023367 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Grass_1_1.prefab
+  artifactKey: Guid(2ab833ef86401f8409c0310ffb61631e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Grass_1_1.prefab using Guid(2ab833ef86401f8409c0310ffb61631e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4a14ceff4c97512a01dd0cb88d2d48') in 0.014827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.045694 seconds.
+  path: Assets/Textures/personagem/tor+ºo/Materials
+  artifactKey: Guid(a8678770a7b51334fb777da64b1119ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/personagem/tor+ºo/Materials using Guid(a8678770a7b51334fb777da64b1119ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e226659a08dfe6eac370936b109551ee') in 0.000703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.062628 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Flower_1.mat
+  artifactKey: Guid(283de1beb3aedd045a5a80e606de63c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Materials/Flower_1.mat using Guid(283de1beb3aedd045a5a80e606de63c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695407321ced8a40f5c0e9a12a074153') in 0.013069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006086 seconds.
+  path: Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Tree_1_2.prefab
+  artifactKey: Guid(d855296cdd38f1d43a9018c918395080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeVegetation-LowPolyNature/FreeVegetation/Prefabs/Tree_1_2.prefab using Guid(d855296cdd38f1d43a9018c918395080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d3481b0cfbdd575bb87b1f997b81ba') in 0.013968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.006050 seconds.
+  path: Assets/SkySeries Freebie/ExampleScenes/DarkStorm.unity
+  artifactKey: Guid(952ead6250bb92747a18eeb7e40334cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySeries Freebie/ExampleScenes/DarkStorm.unity using Guid(952ead6250bb92747a18eeb7e40334cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db014fbc76684df8f5e35d78073134d7') in 0.000561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 3619.
+Memory consumption went from 87.3 MB to 87.3 MB.
+Total: 17.138100 ms (FindLiveObjects: 0.302400 ms CreateObjectMapping: 0.104700 ms MarkObjects: 16.702700 ms  DeleteObjects: 0.026900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
