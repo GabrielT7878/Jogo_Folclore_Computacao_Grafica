@@ -693,6 +693,7 @@
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj" />
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj" />
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj" />
     <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj" />
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj" />
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" />
@@ -709,6 +710,7 @@
     <ProjectReference Include="Unity.Rider.Editor.csproj" />
     <ProjectReference Include="Unity.VisualScripting.State.csproj" />
     <ProjectReference Include="Unity.VSCode.Editor.csproj" />
+    <ProjectReference Include="Cinemachine.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
   </ItemGroup>

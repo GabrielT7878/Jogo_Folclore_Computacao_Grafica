@@ -1,7 +1,9 @@
 using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class ControlPlayer : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class ControlPlayer : MonoBehaviour
     public float runSpeed;
     public CapsuleCollider col;
     private float horizontal;
+    public Camera cam;
+    public PlayableDirector playableDirector;
 
 
     public Animator anim;
@@ -41,7 +45,7 @@ public class ControlPlayer : MonoBehaviour
                 col.height = 1.42f;
                 col.center = new Vector3(0, 0.6f, 0);
             }
-            
+
             Vector3 direction = new Vector3(0, 0, horizontal);
 
             transform.Translate(direction * walkSpeed * Time.deltaTime);
@@ -157,26 +161,46 @@ public class ControlPlayer : MonoBehaviour
     /// <param name="other">The Collision data associated with this collision.</param>
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag == "Jumper")
+        if (other.gameObject.tag == "Jumper")
         {
             anim.SetTrigger("jump");
             rb.AddForce(transform.up * forceJump * 2.5f, ForceMode.Impulse);
         }
 
-        if(other.gameObject.tag == "Damage")
+        if (other.gameObject.tag == "Damage")
         {
-            if(horizontal > 0.01f)
+            if (horizontal > 0.01f)
             {
                 rb.AddForce(new Vector3(0, 0.5f, -0.5f) * forceJump * 0.8f, ForceMode.Impulse);
             }
-            else if(horizontal < -0.01f)
+            else if (horizontal < -0.01f)
             {
                 rb.AddForce(new Vector3(0, 0.5f, 0.5f) * forceJump * 0.8f, ForceMode.Impulse);
-            }else{
-                 rb.AddForce(new Vector3(0, 1f, 0.5f) * forceJump, ForceMode.Impulse);
+            }
+            else
+            {
+                rb.AddForce(new Vector3(0, 1f, 0.5f) * forceJump, ForceMode.Impulse);
             }
         }
+
+        if (other.gameObject.tag == "EnemyCutscene")
+        {
+            CinemachineBrain cine = cam.GetComponent<CinemachineBrain>();
+            cine.enabled = true;
+            playableDirector.Play();
+        }
     }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "EnemyCutscene")
+        {
+            CinemachineBrain cine = cam.GetComponent<CinemachineBrain>();
+            cine.enabled = false;
+        }
+    }
+
+
 
 
     private void OnDrawGizmos()
@@ -185,3 +209,7 @@ public class ControlPlayer : MonoBehaviour
         Gizmos.DrawSphere(transform.position + groundCheckPosition, groundCheckSize);
     }
 }
+
+
+
+

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jumper
   - Damage
+  - EnemyCutscene
   layers:
   - Default
   - TransparentFX
