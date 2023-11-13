@@ -7,6 +7,8 @@ TagManager:
   - Jumper
   - Damage
   - EnemyCutscene
+  - Cipo
+  - ball
   layers:
   - Default
   - TransparentFX
