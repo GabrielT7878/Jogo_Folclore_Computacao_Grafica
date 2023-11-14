@@ -19,142 +19,206 @@ public class ControlPlayer : MonoBehaviour
     public float runSpeed;
     public CapsuleCollider col;
     private float horizontal;
+    private float vertical;
     public Camera cam;
     public PlayableDirector playableDirector;
     public GameObject lanca;
     public Transform maoDireita;
     public GameObject ball;
     public Animator anim;
+    public bool lockWalkStatus = false;
+
+    public Vector3 direction;
 
     void Start()
     {
-
+        direction = new Vector3(0, 0, 0);
     }
 
     void Update()
     {
 
         horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        vertical = Input.GetAxis("Vertical");
 
-        if (vertical > 0.01f && rb.isKinematic)
-        {
-            rb.transform.Translate(new Vector3(0, 1, 0) * walkSpeed * Time.deltaTime);
-        }
-        else if (vertical < -0.01f && rb.isKinematic)
-        {
-            rb.transform.Translate(new Vector3(0, -1, 0) * walkSpeed * Time.deltaTime);
-        }
+        climbingCipe();
 
         if (!roll)
         {
-            if (Input.GetButtonDown("Fire3") && !roll)
+            if (Input.GetKeyDown(KeyCode.X))
             {
-                anim.SetTrigger("Rolar");
-                roll = true;
-                col.height = 1.42f;
-                col.center = new Vector3(0, 0.6f, 0);
-            }
-
-            Vector3 direction = new Vector3(0, 0, horizontal);
-
-            transform.Translate(direction * walkSpeed * Time.deltaTime);
-
-
-            if (horizontal != 0)
-            {
-                anim.SetBool("walk", true);
-            }
-            else
-            {
+                anim.SetTrigger("attack");
                 anim.SetBool("walk", false);
-            }
-
-            if (horizontal > 0.01f)
-            {
-                rb.transform.localScale = new Vector3(1, 1, 1);
-                side = 1;
-            }
-            if (horizontal < -0.01f)
-            {
-                rb.transform.localScale = new Vector3(1, 1, -1);
-                side = -1;
-            }
-
-
-
-            var groundCheck = Physics.OverlapSphere(transform.position + groundCheckPosition, groundCheckSize, layerMask);
-            if (groundCheck.Length != 1)
-            {
-                isGrounded = true;
-            }
-            else
-            {
-                isGrounded = false;
-            }
-
-            if (isGrounded && Input.GetButtonDown("Jump"))
-            {
-                if (Input.GetButton("Fire2") && horizontal > 0.01f)
-                {
-                    rb.AddForce(new Vector3(0, 1, 1) * forceJump, ForceMode.Impulse);
-                    anim.SetBool("jump_run", true);
-                }
-                else if (Input.GetButton("Fire2") && horizontal < -0.01f)
-                {
-                    rb.AddForce(new Vector3(0, 1, -1) * forceJump, ForceMode.Impulse);
-                    anim.SetBool("jump_run", true);
-                }
-                else if (horizontal > 0.01f)
-                {
-                    rb.AddForce(new Vector3(0, 1, 0.5f) * forceJump, ForceMode.Impulse);
-
-                }
-                else if (horizontal < -0.01f)
-                {
-                    rb.AddForce(new Vector3(0, 1, -0.5f) * forceJump, ForceMode.Impulse);
-                }
-                else
-                {
-                    rb.AddForce(transform.up * forceJump, ForceMode.Impulse);
-                }
-                anim.SetTrigger("jump");
-            }
-
-            if (Input.GetButton("Fire2") && isGrounded && horizontal != 0)
-            {
-                if (walkSpeed < runSpeed)
-                {
-                    walkSpeed += 0.1f;
-                }
-                transform.Translate(direction * walkSpeed * Time.deltaTime);
-                anim.SetBool("running", true);
-            }
-            else
-            {
                 anim.SetBool("running", false);
-                walkSpeed = 3;
+                lockWalkStatus = true;
             }
 
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                anim.SetTrigger("normal_attack");
+                anim.SetBool("walk", false);
+                anim.SetBool("running", false);
+                lockWalkStatus = true;
+            }
 
+            rolling();
+
+            walk();
+
+            isGroudend();
+
+            jump();
+
+            running();
+
+            idleCipe();
         }
-        if (roll)
+        else
         {
+            //move automatic while rolling
             transform.Translate(new Vector3(0, 0, side) * walkSpeed * 0.5f * Time.deltaTime);
         }
 
+    }
+
+    public void climbingCipe()
+    {
+        if (vertical > 0.01f && rb.isKinematic)
+        {
+            rb.transform.Translate(new Vector3(0, 1, 0) * walkSpeed * Time.deltaTime);
+            anim.SetBool("subir", true);
+            anim.SetBool("idle_cipo", false);
+        }
+        else if (vertical < -0.01f && rb.isKinematic && isGroudend())
+        {
+            rb.transform.Translate(new Vector3(0, -1, 0) * walkSpeed * Time.deltaTime);
+            anim.SetBool("subir", true);
+            anim.SetBool("idle_cipo", false);
+        }
+        else if (rb.isKinematic)
+        {
+            anim.SetBool("subir", false);
+            anim.SetBool("idle_cipo", true);
+        }
+    }
+
+    public void rolling()
+    {
+        if (Input.GetButtonDown("Fire3"))
+        {
+            anim.SetTrigger("Rolar");
+            roll = true;
+            col.height = 1.42f;
+            col.center = new Vector3(0, 0.6f, 0);
+        }
+    }
+
+    public void walk()
+    {   
+        if(lockWalkStatus){
+            return;
+        }
+        Vector3 direction = new Vector3(0, 0, horizontal);
+        transform.Translate(direction * walkSpeed * Time.deltaTime);
+        if (horizontal != 0)
+        {
+            anim.SetBool("walk", true);
+        }
+        else
+        {
+            anim.SetBool("walk", false);
+            return;
+        }
+
+        if (horizontal > 0.01f)
+        {
+            rb.transform.localScale = new Vector3(1, 1, 1);
+            side = 1;
+        }
+        if (horizontal < -0.01f)
+        {
+            rb.transform.localScale = new Vector3(1, 1, -1);
+            side = -1;
+        }
+    }
+
+    public void idleCipe()
+    {
         if (horizontal != 0 && rb.isKinematic)
         {
             rb.isKinematic = false;
             anim.SetBool("subir", false);
+            anim.SetBool("idle_cipo", false);
         }
-
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            anim.SetTrigger("attack");
-        }
-
     }
+
+    public bool isGroudend()
+    {
+        var groundCheck = Physics.OverlapSphere(transform.position + groundCheckPosition, groundCheckSize, layerMask);
+        if (groundCheck.Length != 1)
+        {
+            isGrounded = true;
+            return true;
+        }
+        else
+        {
+            isGrounded = false;
+            return false;
+        }
+    }
+
+    public void jump()
+    {
+        if (isGrounded && Input.GetButtonDown("Jump"))
+        {
+            if (Input.GetButton("Fire2") && horizontal > 0.01f)
+            {
+                rb.AddForce(new Vector3(0, 1, 1) * forceJump, ForceMode.Impulse);
+                anim.SetBool("jump_run", true);
+            }
+            else if (Input.GetButton("Fire2") && horizontal < -0.01f)
+            {
+                rb.AddForce(new Vector3(0, 1, -1) * forceJump, ForceMode.Impulse);
+                anim.SetBool("jump_run", true);
+            }
+            else if (horizontal > 0.01f)
+            {
+                rb.AddForce(new Vector3(0, 1, 0.5f) * forceJump, ForceMode.Impulse);
+
+            }
+            else if (horizontal < -0.01f)
+            {
+                rb.AddForce(new Vector3(0, 1, -0.5f) * forceJump, ForceMode.Impulse);
+            }
+            else
+            {
+                rb.AddForce(transform.up * forceJump, ForceMode.Impulse);
+            }
+            anim.SetTrigger("jump");
+        }
+    }
+
+    public void running()
+    {
+        if(lockWalkStatus){
+            return;
+        }
+        if (Input.GetButton("Fire2") && isGrounded && horizontal != 0)
+        {
+            if (walkSpeed < runSpeed)
+            {
+                walkSpeed += 0.1f;
+            }
+            transform.Translate(direction * walkSpeed * Time.deltaTime);
+            anim.SetBool("running", true);
+        }
+        else
+        {
+            anim.SetBool("running", false);
+            walkSpeed = 3;
+        }
+    }
+
     public void endRoll(int i)
     {
         if (i == 1)
@@ -173,17 +237,22 @@ public class ControlPlayer : MonoBehaviour
         }
     }
 
-    public void attack(){
+    public void attack()
+    {
         GameObject l = Instantiate(lanca, maoDireita.position, Quaternion.identity);
-        l.transform.localScale = new Vector3(30f, 30f, 30f);
+        l.transform.localScale = new Vector3(30f, 30f, 30f * side);
         l.AddComponent<Rigidbody>();
         l.GetComponent<Rigidbody>().useGravity = false;
         l.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 10 * side);
+        Destroy(l, 2f);
+    }
 
-        //Rigidbody lb = l.GetComponent<Rigidbody>();
-        //lb.isKinematic = true;
-        //lb.velocity = new Vector3(0,0,2 * side);
-        //l.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+    public void endAttack(){
+        lockWalkStatus = false;
+    }
+
+    public void endNormalAttack(){
+        lockWalkStatus = false;
     }
 
     void OnCollisionEnter(Collision other)
@@ -216,7 +285,7 @@ public class ControlPlayer : MonoBehaviour
             cine.enabled = true;
             playableDirector.Play();
         }
-        
+
         if (other.gameObject.tag == "ball")
         {
             ball.GetComponent<Rigidbody>().isKinematic = false;
@@ -237,7 +306,7 @@ public class ControlPlayer : MonoBehaviour
         if (other.gameObject.tag == "Cipo")
         {
             rb.isKinematic = true;
-            anim.SetBool("subir", true);
+            anim.SetBool("idle_cipo", true);
         }
     }
 
